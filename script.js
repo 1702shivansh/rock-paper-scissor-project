@@ -57,5 +57,16 @@ const result=(val)=>{
     else
         win(val,no);
 };
+document.getElementById("play-again").addEventListener("click", () => {
+    // Hide message
+    document.querySelector(".final-mssg").style.display = "none";
 
+    // Reset score counters
+    cntmy = 0;
+    cntcomp = 0;
+
+    // Reset score display
+    document.getElementById("mypoint").innerText = "0";
+    document.getElementById("compoint").innerText = "0";
+});
 
