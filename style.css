@@ -1,0 +1,120 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CCBCBC;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading Styles */
+.heading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1D21;
+    color: #A288A6;
+    padding: 20px 0;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+/* Main Container */
+.container {
+    margin-top: 50px;
+}
+
+/* Button Group */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Buttons */
+.choice {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 1.5rem;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.choice:hover {
+    transform: scale(1.05);
+}
+
+/* Individual Button Backgrounds */
+.one {
+    background-image: url("rock.jpeg");
+}
+
+.two {
+    background-image: url("paper.jpeg");
+}
+
+.three {
+    background-image: url("scissor.jpeg");
+}
+
+/* Score Section */
+#scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 30px;
+}
+
+.score {
+    height: 140px;
+    width: 120px;
+    border: 5px solid black;
+    background-color: #BB9BB0;
+    color: #1C1D21;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 8px;
+}
+
+.score p {
+    margin: 0;
+}
+
+.score p:first-child {
+    font-size: 2.2rem;
+    color: #000;
+}
+
+/* Final Message Styling */
+.final-mssg {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #1C1D21;
+    background-color: #FFE5EC;
+    padding: 15px;
+    border-radius: 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
